@@ -44,8 +44,8 @@ import logoUrl from '../../assets/hero/will.jpeg?url';
                 <div style="width: 45%; align-items: left;">
                     <div style="display: flex;">
                         <img src={logoUrl} alt="Image description" style="width: 200px; height: 200px;">
+                    <div class="details-content">
                         <p>William Cull-Whitten<br>Computer Engineering<br>Class of 2027</p>
-                    </div>
                     <div>
                         <svg viewBox="0 0 16 16" aria-hidden="true" width="50" height="50">
                             <path fill="currentColor"
@@ -92,6 +92,10 @@ details summary {
 details p {
     font-size: 25px; /* Adjust as needed */
     padding: 10px; /* Add some padding */
-    margin-bottom: -70px;
+}
+.details-content {
+    font-size: 25px; /* Adjust as needed */
+    padding: 10px; /* Add some padding */
+    margin-bottom: 20px; /* Add space below the text and logos */
 }
 </style>
