@@ -46,12 +46,25 @@ import Layout from '../layouts/BlogPost.astro';
 </Layout>
 
 <style>
+details {
+    border: 1px solid #000; /* Add a border */
+    width: 200px; /* Set a specific width */
+    transition: height 0.5s ease; /* Add a transition for the height */
+}
+
+details[open] {
+    height: auto; /* When the details are open, set the height to auto */
+}
+
 details summary {
     font-size: 30px; /* Adjust as needed */
     padding: 10px; /* Adjust as needed */
+    background: #f9f9f9; /* Add a background color */
+    cursor: pointer; /* Change the cursor to a pointer */
 }
 
 details p {
     font-size: 18px; /* Adjust as needed */
+    padding: 10px; /* Add some padding */
 }
 </style>
