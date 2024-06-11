@@ -8,19 +8,8 @@ import Layout from '../layouts/BlogPost.astro';
 	pubDate={new Date('August 08 2021')}
 	heroImage="/blog-placeholder-about.jpg"
 >
-	<div style="text-align: center; border-bottom: 1px solid #ffffff;">
-		<h1>What is MUN Concrete Toboggan?</h1>
-	</div>
-	<div style="text-align: center">
-		<p>
-			Concrete Toboggan is a diverse student group from the Memorial University of Newfoundland and 
-			Labrador (MUN). The team includes five engineering sub-teams which are mechanical, concrete, 
-			logistics, marketing, spirit and display. A team of students from various backgrounds and 
-			disciplines that come together and build a concrete toboggan for the annual GNCTR.
-		</p>
-	</div>
 	<div style="text-align: center; border-bottom: 1px solid #ffffff;">					
-		<h1>Sub-Teams</h1>
+		<h1>Past Teams</h1>
 	</div>
 	<div style="text-align: center">
 		<details>
@@ -57,13 +46,12 @@ import Layout from '../layouts/BlogPost.astro';
 </Layout>
 
 <style>
-details {
-	margin: 1em 0;
-	text-align: center;
-	border-bottom: 1px solid #ffffff;
+details summary {
+    font-size: 30px; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
 }
-summary {
-	font-weight: bold;
-	cursor: pointer;
+
+details p {
+    font-size: 18px; /* Adjust as needed */
 }
 </style>
