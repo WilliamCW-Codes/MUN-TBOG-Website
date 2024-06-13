@@ -108,7 +108,15 @@ details p {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-	padding: 0 1em; /* Add horizontal padding */
+	max-width: 80vw; /* Limit the width of the container to 80% of the viewport's width */
+    margin: 0 auto; /* Center the container */
+}
+
+.dropdown-container div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%; /* Make the divs take up the full width of the container */
 }
 
 .dropdown-container details {
@@ -122,7 +130,7 @@ details p {
 }
 
 .dropdown-container details p {
-    max-width: 70%; /* Limit the width of the text to 90% of the container's width */
+    max-width: 90%; /* Limit the width of the text to 90% of the container's width */
     margin: 0 auto; /* Center the text */
 }
 </style>
