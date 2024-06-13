@@ -1,4 +1,4 @@
----
+<!-- ---
 import Layout from '../layouts/BlogPost.astro';
 ---
 
@@ -7,9 +7,29 @@ import Layout from '../layouts/BlogPost.astro';
     description="Get in touch with us"
     pubDate={new Date('August 08 2021')}
     heroImage="/blog-placeholder-contact.jpg"
->
-    <div style="text-align: center">
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-5b153324-de9d-4bc4-bbc2-67b05a86c945" data-elfsight-app-lazy></div>
-    </div>
-</Layout>
+> -->
+
+
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <div style="text-align: center">
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-5b153324-de9d-4bc4-bbc2-67b05a86c945" data-elfsight-app-lazy></div>
+            </div>
+        </main>
+		<Footer />
+	</body>
+</html>
