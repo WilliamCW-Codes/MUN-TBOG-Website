@@ -13,7 +13,7 @@ import Instagram from '../../assets/logos/insta.jpeg?url';
             <img src={TBOG} alt="Site Logo" style="width: 100px; height: 100px; margin: 15px" />
             <h2><a href="/">{SITE_TITLE}</a></h2>
         </div>
-		<div class="internal-links" style="margin-left: 450px">
+		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 			<HeaderLink href="/teams">Team</HeaderLink>
@@ -87,12 +87,15 @@ import Instagram from '../../assets/logos/insta.jpeg?url';
 	.social-links a {
 		display: flex;
 	}
+	.internal-links {
+		margin-left: 450px;
+	}
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;
 		}
-		.internal-links {
+		/* .internal-links {
 			max-width: 1px;
-		}	
+		}	 */
 	}
 </style>
