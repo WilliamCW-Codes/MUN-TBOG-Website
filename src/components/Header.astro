@@ -7,10 +7,10 @@ import TBOG from '../../assets/logos/tbogg.png?url';
 
 <header>
 	<nav>
-		<h2>
-			<img src={TBOG} alt="Site Logo" style="width: 100px; height: 100px;" />
-			<a href="/">{SITE_TITLE}</a>
-		</h2>
+		<div style="display: flex; align-items: center;">
+            <img src={TBOG} alt="Site Logo" style="width: 80px; height: 80px;" />
+            <h2><a href="/">{SITE_TITLE}</a></h2>
+        </div>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
