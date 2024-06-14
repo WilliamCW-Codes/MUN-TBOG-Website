@@ -10,8 +10,10 @@ import Instagram from '../../assets/logos/instagram.png?url';
 <header>
 	<nav>
 		<div style="display: flex; align-items: center;">
-            <img src={TBOG} alt="Site Logo" style="width: 100px; height: 100px; margin: 15px" />
-            <h2><a href="/">{SITE_TITLE}</a></h2>
+			<div class="mobile">
+				<img src={TBOG} alt="Site Logo" style="width: 100px; height: 100px; margin: 15px" />
+				<h2><a href="/">{SITE_TITLE}</a></h2>
+			</div>
         </div>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
@@ -77,8 +79,7 @@ import Instagram from '../../assets/logos/instagram.png?url';
 		.internal-links {
 			display: flex;
 		}
-		.internal-links :nth-child(2),
-		.internal-links :nth-child(3) {
+		.mobile {
 			display: none;
 		}
 	}
