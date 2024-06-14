@@ -13,16 +13,12 @@ import Instagram from '../../assets/logos/insta.jpeg?url';
             <img src={TBOG} alt="Site Logo" style="width: 100px; height: 100px; margin: 15px" />
             <h2><a href="/">{SITE_TITLE}</a></h2>
         </div>
-			<input type="checkbox" id="dropdown-toggle" class="dropdown-toggle" />
-			<label for="dropdown-toggle" class="dropdown-button">Menu</label>
-		<div class="dropdown-menu">
-			<div class="internal-links" style="margin-left: 450px">
-				<HeaderLink href="/">Home</HeaderLink>
-				<HeaderLink href="/about">About</HeaderLink>
-				<HeaderLink href="/teams">Team</HeaderLink>
-				<HeaderLink href="/sponsorships">Sponsorship</HeaderLink>
-				<HeaderLink href="/contact">Contact</HeaderLink>
-			</div>
+		<div class="internal-links" style="margin-left: 450px">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/teams">Team</HeaderLink>
+			<HeaderLink href="/sponsorships">Sponsorship</HeaderLink>
+			<HeaderLink href="/contact">Contact</HeaderLink>
 		</div>
 		<div class="social-links" style="align-items: center">
 			<a href="https://instagram.com/mun_concrete_toboggan/"><img src={Instagram} alt="Instagram Logo" style="width: 36px; height: 36px;" /></a>
@@ -91,33 +87,13 @@ import Instagram from '../../assets/logos/insta.jpeg?url';
 	.social-links a {
 		display: flex;
 	}
-
-	.dropdown-toggle {
-    display: none;
-	}
-	.dropdown-button {
-		display: none;
-		/* Styles for the dropdown button */
-	}
-	.dropdown-menu {
-		display: none;
-		/* Styles for the dropdown menu */
-	}
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;
 		}
 
 		.internal-links {
-        
+			margin-right: 100px;
     	}
-
-		.dropdown-button {
-        display: block;
-		}
-
-		.dropdown-toggle:checked ~ .dropdown-menu {
-			display: block;
-		}
 	}
 </style>
