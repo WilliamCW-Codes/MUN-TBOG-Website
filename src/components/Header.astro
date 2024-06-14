@@ -93,9 +93,15 @@ import Instagram from '../../assets/logos/insta.jpeg?url';
 		}
 
 		.internal-links {
-			margin-right: 100px;
-			display: flex;
-        	flex-wrap: wrap;
-    	}
+        width: 100%; /* Ensure the container takes up the full width */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        margin-right: 0; /* Remove the right margin */
+        display: flex;
+        flex-wrap: wrap;
+		}
+
+		.internal-links a {
+			width: auto; /* Remove the fixed width from the links */
+		}
 	}
 </style>
