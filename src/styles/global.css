@@ -34,7 +34,8 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: #4b0906;
+	background: #ffffff;
+	
 	/* background: #800020; */
 	/* background: linear-gradient(var(--gray-gradient)) no-repeat; */
 	background-size: 100% 600px;
