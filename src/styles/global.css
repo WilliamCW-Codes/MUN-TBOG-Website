@@ -5,7 +5,7 @@
  */
 
 :root {
-	--ark-red: 125, 30, 25;
+	/* --ark-red: 125, 30, 25; */
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
@@ -35,7 +35,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: rbg(var(--dark-red));
+	background: #000d8a;
 
 	/* background: #800020; */
 	/* background: linear-gradient(var(--gray-gradient)) no-repeat; */
